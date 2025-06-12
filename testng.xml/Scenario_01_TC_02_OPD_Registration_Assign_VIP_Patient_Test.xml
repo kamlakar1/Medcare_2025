@@ -1,0 +1,7 @@
+<suite name="SeleniumSuite">
+  <test name="LoginTests">
+    <classes>
+      <class name="com.Medcare.tests.LoginTest"/>
+    </classes>
+  </test>
+</suite>

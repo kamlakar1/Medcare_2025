@@ -1,0 +1,14 @@
+<suite name="SeleniumSuite">
+  <test name="LoginTests">
+    <classes>
+	  <parameter name="Uesrid" value="10041004"/>
+      <class name="com.Medcare.tests.Scenario_9_18_Consignment_Conversion"/>
+    </classes>
+  </test>
+</suite>
+
+
+
+
+
+

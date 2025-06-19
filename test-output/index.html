@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SeleniumSuite" class="navigator-link ">
-                    <span>C:\Users\Kamlakar\eclipse-workspace\Medcare_1\testng.xml\Scenario_01_TC_02_OPD_Registration_Assign_VIP_Patient_Test.xml</span>
+                    <span>C:\Users\Kamlakar\eclipse-workspace\Medcare_1\testng.xml\Scenario_9_19_Consignment_PO.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,29 @@
                     <div class="method-list-content failed suite-SeleniumSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SeleniumSuite" title="com.Medcare.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SeleniumSuite" title="com.Medcare.tests.Scenario_9_19_Consignment_PO" class="method navigator-link" hash-for-method="ConsignmetPO">ConsignmetPO</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SeleniumSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SeleniumSuite" class="hide-methods skipped suite-SeleniumSuite"> (hide)</a> <!-- hide-methods skipped suite-SeleniumSuite -->
+                      <a href="#" panel-name="suite-SeleniumSuite" class="show-methods skipped suite-SeleniumSuite"> (show)</a> <!-- show-methods skipped suite-SeleniumSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-SeleniumSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumSuite" title="com.Medcare.tests.Scenario_9_19_Consignment_PO" class="method navigator-link" hash-for-method="ConsignmetPO">ConsignmetPO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumSuite" title="com.Medcare.tests.Scenario_9_19_Consignment_PO" class="method navigator-link" hash-for-method="ConsignmetPO">ConsignmetPO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SeleniumSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,28 +140,113 @@
           <div class="suite-SeleniumSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.Medcare.tests.LoginTest</span>
+              <span class="class-name">com.Medcare.tests.Scenario_9_19_Consignment_PO</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validLoginTest">
-                  </a> <!-- validLoginTest -->
-                  <span class="method-name">validLoginTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
-	at com.Medcare_1.pages.LoginPage.login(LoginPage.java:18)
-	at com.Medcare.tests.LoginTest.validLoginTest(LoginTest.java:17)
+                  <a name="ConsignmetPO">
+                  </a> <!-- ConsignmetPO -->
+                  <span class="method-name">ConsignmetPO</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-ng-c2832959482=&quot;&quot; appaccordiontoggle=&quot;&quot; class=&quot;navigation-link parent ng-star-inserted&quot; title=&quot;Consignment&quot; id=&quot;10044&quot; data-sequence=&quot;19&quot;&gt;...&lt;/a&gt; is not clickable at point (32, 492). Other element would receive the click: &lt;div _ngcontent-ng-c2748038641=&quot;&quot; class=&quot;ngx-overlay foreground-closing&quot; style=&quot;background-color: rgba(255, 255, 255, 0.29); border-radius: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f1dc4fbfb6427a95337292f95f8bfe9b, clickElement {id=f.40B668DB8161B92CA8D4DA06FF96C488.d.2DADDF1E4ED779BF37212509A69CA477.e.168}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Kamlakar\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61930}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61930/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f1dc4fbfb6427a95337292f95f8bfe9b)] -&gt; id: 10044]
+Session ID: f1dc4fbfb6427a95337292f95f8bfe9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Medcare_1.pages.ProcurmentConsignmentConversion.ConsignmetPO(ProcurmentConsignmentConversion.java:175)
+	at com.Medcare.tests.Scenario_9_19_Consignment_PO.ConsignmetPO(Scenario_9_19_Consignment_PO.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SeleniumSuite-class-failed -->
+          <div class="suite-SeleniumSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.Medcare.tests.Scenario_9_19_Consignment_PO</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConsignmetPO">
+                  </a> <!-- ConsignmetPO -->
+                  <span class="method-name">ConsignmetPO</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-ng-c2832959482=&quot;&quot; appaccordiontoggle=&quot;&quot; class=&quot;navigation-link parent ng-star-inserted&quot; title=&quot;Consignment&quot; id=&quot;10044&quot; data-sequence=&quot;19&quot;&gt;...&lt;/a&gt; is not clickable at point (32, 492). Other element would receive the click: &lt;div _ngcontent-ng-c2748038641=&quot;&quot; class=&quot;ngx-overlay foreground-closing&quot; style=&quot;background-color: rgba(255, 255, 255, 0.29); border-radius: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd77a2b292dc9c720f1d76340b586526, clickElement {id=f.D725EA13A2151F0F3D31F179859C9C31.d.25D43A3E97E1FC8515C8B6768DBE030E.e.172}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Kamlakar\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61812/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fd77a2b292dc9c720f1d76340b586526)] -&gt; id: 10044]
+Session ID: fd77a2b292dc9c720f1d76340b586526
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Medcare_1.pages.ProcurmentConsignmentConversion.ConsignmetPO(ProcurmentConsignmentConversion.java:175)
+	at com.Medcare.tests.Scenario_9_19_Consignment_PO.ConsignmetPO(Scenario_9_19_Consignment_PO.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ConsignmetPO">
+                  </a> <!-- ConsignmetPO -->
+                  <span class="method-name">ConsignmetPO</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-ng-c2832959482=&quot;&quot; appaccordiontoggle=&quot;&quot; class=&quot;navigation-link parent ng-star-inserted&quot; title=&quot;Consignment&quot; id=&quot;10044&quot; data-sequence=&quot;19&quot;&gt;...&lt;/a&gt; is not clickable at point (32, 492). Other element would receive the click: &lt;div _ngcontent-ng-c2748038641=&quot;&quot; class=&quot;ngx-overlay foreground-closing&quot; style=&quot;background-color: rgba(255, 255, 255, 0.29); border-radius: 0px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=137.0.7151.69)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [65748a2e459bee716893cf7ed5596a2b, clickElement {id=f.63AB0699B8C7F352C7BC1DC079BDE54D.d.3911C4D640F5CDD27583B34BA6AB9E77.e.167}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Kamlakar\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61642/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (65748a2e459bee716893cf7ed5596a2b)] -&gt; id: 10044]
+Session ID: 65748a2e459bee716893cf7ed5596a2b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Medcare_1.pages.ProcurmentConsignmentConversion.ConsignmetPO(ProcurmentConsignmentConversion.java:175)
+	at com.Medcare.tests.Scenario_9_19_Consignment_PO.ConsignmetPO(Scenario_9_19_Consignment_PO.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumSuite-class-skipped -->
         </div> <!-- panel SeleniumSuite -->
         <div panel-name="test-xml-SeleniumSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Kamlakar\eclipse-workspace\Medcare_1\testng.xml\Scenario_01_TC_02_OPD_Registration_Assign_VIP_Patient_Test.xml</span>
+            <span class="header-content">C:\Users\Kamlakar\eclipse-workspace\Medcare_1\testng.xml\Scenario_9_19_Consignment_PO.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -150,8 +254,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;SeleniumSuite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginTests&quot;&gt;
+    &lt;parameter name=&quot;Uesrid&quot; value=&quot;10041004&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Medcare.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.Medcare.tests.Scenario_9_19_Consignment_PO&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginTests --&gt;
 &lt;/suite&gt; &lt;!-- SeleniumSuite --&gt;
@@ -191,16 +296,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginTest')
-data.setCell(0, 2, 'com.Medcare.tests.LoginTest')
-data.setCell(0, 3, 22);
+data.setCell(0, 1, 'ConsignmetPO')
+data.setCell(0, 2, 'com.Medcare.tests.Scenario_9_19_Consignment_PO')
+data.setCell(0, 3, 72922);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ConsignmetPO')
+data.setCell(1, 2, 'com.Medcare.tests.Scenario_9_19_Consignment_PO')
+data.setCell(1, 3, 69424);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ConsignmetPO')
+data.setCell(2, 2, 'com.Medcare.tests.Scenario_9_19_Consignment_PO')
+data.setCell(2, 3, 67407);
 window.suiteTableData['SeleniumSuite']= { tableData: data, tableDiv: 'times-div-SeleniumSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 ms</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-SeleniumSuite">
               </div> <!-- times-div-SeleniumSuite -->
             </div> <!-- times-div -->
@@ -226,20 +339,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Medcare.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Medcare.tests.Scenario_9_19_Consignment_PO</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(public void com.Medcare.tests.LoginTest.validLoginTest())</span>
+                <span class="method-name">setup(public void com.Medcare.tests.Scenario_9_19_Consignment_PO.ConsignmetPO() throws java.awt.AWTExcepti...)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ConsignmetPO</span>
+                <span class="method-start">107337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=ConsignmetPO status=SKIP method=Scenario_9_19_Consignment_PO.ConsignmetPO()[pri:1, ...)</span>
+                <span class="method-start">180264 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.Medcare.tests.Scenario_9_19_Consignment_PO.ConsignmetPO() throws java.awt.AWTExcepti...)</span>
+                <span class="method-start">182825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ConsignmetPO</span>
+                <span class="method-start">247004 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=ConsignmetPO status=SKIP method=Scenario_9_19_Consignment_PO.ConsignmetPO()[pri:1, ...)</span>
+                <span class="method-start">316432 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.Medcare.tests.Scenario_9_19_Consignment_PO.ConsignmetPO() throws java.awt.AWTExcepti...)</span>
+                <span class="method-start">318905 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validLoginTest</span>
-                <span class="method-start">18402 ms</span>
+                <span class="method-name">ConsignmetPO</span>
+                <span class="method-start">379754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validLoginTest status=FAILURE method=LoginTest.validLoginTest()[pri:0, instance:com...)</span>
-                <span class="method-start">18432 ms</span>
+                <span class="method-name">teardown([TestResult name=ConsignmetPO status=FAILURE method=Scenario_9_19_Consignment_PO.ConsignmetPO()[pri:...)</span>
+                <span class="method-start">447164 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

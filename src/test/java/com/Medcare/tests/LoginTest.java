@@ -6,12 +6,13 @@ import org.testng.annotations.Test;
 import com.Medcare_1.base.*;
 
 import com.Medcare_1.pages.LoginPage;
+import com.Medcare_1.utilities.RetryAnalyzer;
 
 public class LoginTest extends BaseTest {
 	
 	WebDriver driver;
 
-    @Test
+	 @Test(retryAnalyzer = RetryAnalyzer.class)
     public void validLoginTest() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("admin", "admin123");

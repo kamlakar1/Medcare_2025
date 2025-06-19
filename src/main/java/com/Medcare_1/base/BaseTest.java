@@ -1,6 +1,8 @@
 package com.Medcare_1.base;
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -12,36 +14,48 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
+
+
 public class BaseTest {
+    
     public WebDriver driver;
     public ATUTestRecorder recorder;
 
-    @BeforeMethod
-    public void setup(Method method) throws Exception {
-        // Create timestamp for unique video name
-        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+    // ✅ No-arg constructor required for child classes
+    public BaseTest() {
+        // Initialize if necessary
+    }
 
-        // Create folder if not exists (you can also do this manually)
+    // Optional: keep this if you're using it somewhere else
+    public BaseTest(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    @BeforeMethod
+    @Parameters("Uesrid")
+    public void setup(Method method, String Uesrid) throws Exception {
+        String timeStamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
         new java.io.File("videos").mkdirs();
 
-        // Start video with test method name
         recorder = new ATUTestRecorder("videos/", method.getName() + "_" + timeStamp, false);
         recorder.start();
 
-        // Set up WebDriver
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(ConfigReader.getProperty("url"));  // make sure ConfigReader works
+        driver.get(ConfigReader.getProperty("url"));
+
+        com.Medcare_1.pages.Login loginScreen = new com.Medcare_1.pages.Login(driver);
+        loginScreen.login_Medcare(Uesrid);
     }
 
     @AfterMethod
     public void teardown(ITestResult result) throws ATUTestRecorderException {
         if (recorder != null) {
-            recorder.stop();  // stop video
+            recorder.stop();
         }
-
         if (driver != null) {
-            driver.quit();  // close browser
+            driver.quit();
         }
     }
 }
